@@ -16,7 +16,9 @@ QIWI: https://qiwi.com/n/MO4KI
 • <code>git clone https://github.com/mo4ki/wcam</code><br>
 • <code>python3 wcam.py</code><br>
 
-# 
+# Скрипт в действии
+  ![](http://prnt.sc/10gc9um)
+
 
 # FSystem88
 Этот человек вдохновил меня на создание этого скрипта.
