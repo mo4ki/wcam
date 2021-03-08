@@ -17,8 +17,17 @@ QIWI: https://qiwi.com/n/MO4KI
 • <code>python3 wcam.py</code><br>
 
 # Скрипт в действии
+
+  Этап 1
+
   ![](https://i.imgur.com/k0Y9bei.png)
+  
+  Этап 2
+  
   ![](https://i.imgur.com/XZ9Zy6O.png)
+  
+  Этап 3
+  
   ![](https://i.imgur.com/Rhw9JhB.png)
 
 
