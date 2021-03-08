@@ -17,7 +17,9 @@ QIWI: https://qiwi.com/n/MO4KI
 • <code>python3 wcam.py</code><br>
 
 # Скрипт в действии
-  ![](http://prnt.sc/10gc9um)
+  ![](https://i.imgur.com/k0Y9bei.png)
+  ![](https://i.imgur.com/XZ9Zy6O.png)
+  ![](https://i.imgur.com/Rhw9JhB.png)
 
 
 # FSystem88
