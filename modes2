@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from time import sleep
 import os
 from colorama import init, Fore, Back, Style
@@ -108,14 +109,14 @@ elif ass == "4":
 
 elif ass == "5":
 	as1w()
-	subprocess.run (["sudo", "etc/init.d/bluetooth","start"], stdout=subprocess.DEVNULL)
+	os.system("service bluetooth start")
 	sleep(1)
 	wfs = input(str(Fore.RED+"[*]"+Fore.RESET+" BSSID блютуз устройства: "))
 	sleep(1)
 	ws = wfs.replace(' ', '')
-	os.system("sudo xterm -e l2ping -i hci0 -s 400 -f"+ws)
+	os.system("sudo xterm -e l2ping -i hci0 -s 400 -f "+ws)
 	sleep(1)
-	subprocess.run (["sudo", "etc/init.d/bluetooth","stop"], stdout=subprocess.DEVNULL)
+	os.system("service bluetooth stop")
 	os.system("sudo ./modes")
 
 elif ass == "6":
@@ -147,13 +148,13 @@ elif ass == "8":
 
 elif ass == "9":
 	as1w()
-	subprocess.run (["sudo", "etc/init.d/bluetooth","start"], stdout=subprocess.DEVNULL)
+	os.system("service bluetooth start")
 	sleep(1)
 	print(Fore.RED+"[*]"+Fore.RESET+" Произвожу захват блютуз пакетов...")
 	sleep(1)
 	os.system("sudo xterm -e hcitool scan")
 	sleep(1)
-	subprocess.run (["sudo", "etc/init.d/bluetooth","stop"], stdout=subprocess.DEVNULL)
+	os.system("service bluetooth stop")
 	os.system("sudo ./modes")
 
 elif ass == "10":
@@ -227,7 +228,7 @@ elif ass == "FSystem88":
 	sleep(3)
 	print("И сделал я видео про установку этого спамера и написал я этому человеку в лс в телеграме.\n")
 	sleep(3)
-	print("И спросил я разрешения на счёт видео о спамере моём и дал он разрешение своё.\n")
+	print("И спросил я разрешения на счёт видео о спамере его и дал он разрешение своё.\n")
 	sleep(3)
 	print("И выложил я видео своё на ютуб канал свой и набрало виде моё дох*я просмотров.\n")
 	sleep(3)
