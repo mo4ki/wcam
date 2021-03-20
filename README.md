@@ -9,7 +9,7 @@ QIWI: https://qiwi.com/n/MO4KI
 (Спасибо за донат)
 
 # Как установить?
-<b>Установка проста и не требует лишних действий. Тупоc Ctrl+C Ctrl+V</b><br>
+<b>Установка проста и не требует лишних действий. Тупо Ctrl+C Ctrl+V</b><br>
 • <code>sudo curl -0 https://pastebin.com/raw/r0dL14Xk | bash</code><br>
 
 # Скрипт в действии
