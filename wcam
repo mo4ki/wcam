@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from time import sleep
 import os
 from colorama import init, Fore, Back, Style
@@ -52,10 +53,11 @@ print("""
 print(Fore.RESET+" V - 1.0. БЕТА (УХУ!)")
 print("									   (c) (づ￣ ³￣)づ")
 sleep (1.4)
-#Далее лицензия
-print("Читать лицензионное соглашение? Y/n")
+#Далее пользовательское соглашение
+print("Читать пользовательское соглашение? Y/n")
 fff = input("(незнание его не освобожадет ответственности)\n: ")
 ffff = fff.replace(' ', '')
+
 def sda():
 	print(Fore.YELLOW)
 	print("")
@@ -102,6 +104,8 @@ sleep (1.4)
 
 os.system ("sudo ./modes")
 #нечто по типу напоминалки
-#/sys/class/net os.listdir()
+
+#/sys/class/net os.listdir(/sys/class/net)
 
 #subprocess.run (["sudo", "whoami"], stdout=subprocess.DEVNULL)
+#
