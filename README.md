@@ -1,34 +1,6 @@
 # wcam
-wcam - скрипт для автоматической проверки на безопасность вашей Wi-Fi сети<br>
-Пока только под ubuntu!<br><i>(но если подредактируйте код, то можно и на других linux подобных системах)
-
-Избегаю лишних вопросов, НЕТ В ВИНДОВС НА ПОДСИСТЕМЕ ЛИНУКС НЕ РАБОТАЕТ!</i><br>
-
-# Как установить?
-<b>Установка проста и не требует лишних действий. Тупо Ctrl+C Ctrl+V</b><br>
-• <code>sudo curl -0 https://pastebin.com/raw/r0dL14Xk | bash</code><br>
-
-# Скрипт в действии
-
-  Этап 1
-
-  ![](https://i.imgur.com/k0Y9bei.png)
-  
-  Этап 2
-  
-  ![](https://i.imgur.com/XZ9Zy6O.png)
-  
-  Этап 3
-  
-  ![](https://i.imgur.com/Rhw9JhB.png)
-
-
-# FSystem88
-Этот человек вдохновил меня на создание этого скрипта.
-FSystem88 если ты читаешь это, то спасибо. Просто спасибо.
-
-<br><b>---> <a href="https://github.com/FSystem88">Его гитхаб</a> <---</b><br>
+wcam - script to automatically check the security of your Wi-Fi network<br>
 
 # LICENSE
 Лицензия: MPL-2.0<br>
-Глаголит она о том, что если у вас будут хоть какие то проблемы с законом, то <b>эти проблемы остаются вашими</b>, ибо я всего лишь программист, а вы использовали мой скрипт в своих корыстных целях!
+She says that if you have at least some problems with the law, then <b>these problems remain yours</b>, because I'm just a programmer, and you used my script for your own selfish purposes!
