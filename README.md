@@ -1,6 +1,9 @@
 # wcam
-wcam - script to automatically check the security of your Wi-Fi network.<br>
-This script was written just for fun<br>
+wcam - script to automatically check the security of your Wi-Fi network.
+This script was written just for fun
+
+# Installation
+to make this scratch work, you need to install mdk4, aircrack-ng, bluez and l2ping.
 
 # LICENSE
 license: MPL-2.0<br>
