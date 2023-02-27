@@ -1,5 +1,6 @@
 # wcam
-wcam - script to automatically check the security of your Wi-Fi network<br>
+wcam - script to automatically check the security of your Wi-Fi network.<br>
+This script was written just for fun<br>
 
 # LICENSE
 license: MPL-2.0<br>
