@@ -1,38 +1,66 @@
-import configs
-import os
-import psutil
 import functions
-
+import configs
+import subprocess
+import os
 
 
 def main():
+
 	while True:
-		os.system('clear')
 
+		print(configs.console_clear) 
 		print(configs.wcam)
-		print('Select action:')
 
-		choice = input('''
-[1] attack Deauth
-[2] attack BeaconFlood
-[3] attack AuthFlood
-[4] attack CrazyPacket
-[5] attack BluetoothDDOS
-[6] Adapter monitoring mode
-[7] Adapter default mode
-[8] Capturing all AP packets 
-[9] Search for bluetooth devices 
-[10] info
-[88] exit. 
-: ''')
-
+		print(' Select action:')
 
 		try:
-			choice = int(choice)
-		except:
-			print('It\'s not a number')
 
-		functions.choice_action(choice)
+			choice = input(configs.variant)
+			choice = int(choice)
+
+			functions.choice_action(choice)
+
+		except ValueError:
+			print(' It\'s not a number')
+
+		except KeyboardInterrupt:
+			print('')
+			functions.choice_action(88)
+
+		except Exception as exc:
+			print(f' Error: {exc}')
+
+def choice_adapters_names():
+
+    print(' Choose your adapter:\n')
+    adapters_list = os.listdir(os.path.join('/', 'sys', 'class', 'net'))
+
+    for i, adapter in enumerate(adapters_list):
+        print(f' [{i}]. {adapter}')
+
+    try:
+
+       	adapter_index = input(' : ')
+        adapter_index = int(adapter_index)
+        adapter = adapters_list[adapter_index]
+
+    except ValueError:
+        print(' Please enter a number')
+
+    except IndexError:
+        print(' Invalid index')
+    
+    if 'mon' in adapter:
+    	
+    	configs.adapter_name = adapter[:-3]
+    	configs.adapter_name_mon = adapter
+    
+    else:
+    	
+    	configs.adapter_name = adapter
+    	configs.adapter_name_mon = adapter + 'mon' 
+
+
 
 if __name__ == '__main__':
 
@@ -41,27 +69,10 @@ if __name__ == '__main__':
 		print(configs.non_root)
 		exit(0)
 
-	os.system('clear')
+	print(configs.console_clear) 
 
 	print(configs.hello)
 	print(configs.version + '\n')
 
-	adapters = list(psutil.net_if_addrs())
-
-	for adapter in adapters:
-
-		adapter_index = adapters.index(adapter)
-		print(f'[{adapter_index}] {adapter}')
-
-	choice = input('\nChoice your adapter: ')
-
-	try:
-		choice = int(choice)
-	except:
-		print('It\'s not a number')
-		exit()
-
-	configs.adapter_name = adapters[adapter_index]
-	configs.adapter_name_mon = adapters[adapter_index] + 'mon'
-
+	choice_adapters_names()
 	main()
