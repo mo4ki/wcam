@@ -4,6 +4,7 @@ This script was written just for fun
 
 # Installation
 to make this script work, you need to install mdk4, aircrack-ng, bluez and l2ping.
+after that, just run wcam: python3 wcam.py
 
 # LICENSE
 license: MPL-2.0<br>
